@@ -1,1 +1,2 @@
 C:\Users\Server\Desktop\TinyLand_C\TinyLand\x64\Debug\TinyLand.exe
+C:\Users\Server\Documents\GitHub\TinyLand_A6\TinyLand\x64\Debug\TinyLand.exe

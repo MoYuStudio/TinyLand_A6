@@ -8,12 +8,21 @@
 #include <conio.h> // _getch()
 #include <mmsystem.h> // 多媒体设备接口
 
-double window_size[] = { 1280, 720 };
+int window_size[] = { 1280, 720 };
 char window_title[] = "TinyLand";
 
-void block()
+int block_map[3][3] = {
+						{0,0,0},
+						{0,0,0},
+						{0,0,0}
+					};
+
+void block(int x, int y)
 {
 	IMAGE block_img(128, 128);
+	setbkmode(TRANSPARENT);
+	loadimage(&block_img, TEXT("./1.png"), 128, 128);
+	putimage(0, 0, &block_img, SRCCOPY);
 }
 
 void button(int x, int y, int w, int h)
@@ -40,10 +49,7 @@ int main()
 	settextcolor(RGB(255, 255, 255));
 	outtextxy(0,0,TEXT("TinyLand C Test"));
 
-	IMAGE img;
-	setbkmode(TRANSPARENT);
-	loadimage(&img, TEXT("./1.png"),128,128);
-	putimage(0, 0, &img, SRCCOPY);
+	
 
 	button(250, 250, 150, 50);
 
