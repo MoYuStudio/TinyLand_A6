@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\Server\Desktop\TinyLand_C\TinyLand\main.cpp(31,41): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+C:\Users\Server\Desktop\TinyLand_C\TinyLand\main.cpp(31,25): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  TinyLand.vcxproj -> C:\Users\Server\Desktop\TinyLand_C\TinyLand\x64\Debug\TinyLand.exe
